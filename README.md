@@ -108,4 +108,6 @@ Reforcei a importância de versionar notebooks e documentar as decisões técnic
 ---
 
 
+📚 **Feito por [Letícia Montenegro](https://github.com/LeticiaMontenegro)**  
+💻 *Projeto conceitual desenvolvido para o desafio DIO*
 
