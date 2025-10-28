@@ -100,7 +100,4 @@ A consulta retornou os produtos da categoria **Mountain Bikes**, exibindo inform
 ---
 
 
----
 
-Se quiser, posso gerar esse conteúdo direto em um arquivo `README.md` pra você baixar e só **arrastar pro GitHub** (já com as imagens referenciadas).
-Deseja que eu gere o arquivo `.md` com esse conteúdo completo?
