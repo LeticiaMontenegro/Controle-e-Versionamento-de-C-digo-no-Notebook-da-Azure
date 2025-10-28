@@ -1,6 +1,6 @@
 
 
-##  Projeto: Controle e Versionamento de Código no Notebook da Azure
+##  Projeto: Controle e Versionamento de Código no Notebook do Databricks com Azure
 
 ###  Descrição
 
@@ -108,6 +108,8 @@ Reforcei a importância de versionar notebooks e documentar as decisões técnic
 ---
 
 
-📚 **Feito por [Letícia Montenegro](https://github.com/LeticiaMontenegro)**  
+📚 **Feito por [Letícia Montenegro](https://github.com/LeticiaMontenegro)** 
+🔗 **Perfil DIO:** [https://web.dio.me/users/leehmontenegro](https://web.dio.me/users/leehmontenegro)
+🔗 **LinkedIn:** [https://www.linkedin.com/in/leehmontenegro/](https://www.linkedin.com/in/leehmontenegro/)
 💻 *Projeto conceitual desenvolvido para o desafio DIO*
 
