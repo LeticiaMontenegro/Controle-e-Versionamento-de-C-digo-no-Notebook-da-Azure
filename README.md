@@ -84,7 +84,7 @@ A consulta retornou os produtos da categoria **Mountain Bikes**, exibindo inform
 📌 **1️⃣ Notebook criado e executado no Azure Databricks**
 
 > Mostra o notebook com o DataFrame carregado e a execução do código Python.
-> ![Notebook no Databricks](importando_csv.png)
+> ![Notebook no Databricks](notebook_criado.png)
 
 📌 **2️⃣ Importando Aquivo Cvs e Converter para Spark”**
 
