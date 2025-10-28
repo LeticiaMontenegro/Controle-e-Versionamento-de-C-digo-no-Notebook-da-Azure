@@ -1,6 +1,6 @@
 
 
-##  Projeto: Controle e Versionamento de Código no Notebook do Databricks com Azure
+##  Projeto: Controle e Versionamento de Código no Notebook Azure Databricks
 
 ###  Descrição
 
