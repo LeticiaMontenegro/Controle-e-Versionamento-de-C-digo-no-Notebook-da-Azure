@@ -94,7 +94,7 @@ A consulta retornou os produtos da categoria **Mountain Bikes**, exibindo inform
 📌 **3️⃣ Filtragem dos produtos da categoria “Mountain Bikes”**
 
 > Exibe o resultado do filtro aplicado no DataFrame com os produtos e preços listados.
-> ![Filtro por categoria Mountain Bikes](filtrando_categoria.png)
+> ![Filtro por categoria Mountain Bikes](filtrando_categoria.png.png)
 
 ---
 
