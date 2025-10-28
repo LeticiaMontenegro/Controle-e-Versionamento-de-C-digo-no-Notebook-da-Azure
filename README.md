@@ -32,19 +32,27 @@ Durante a prática, foi realizado um filtro para selecionar apenas os produtos d
 
 ###  Etapas Realizadas
 
-1. Criação de um workspace no **Azure Databricks**;
-2. Criação de um **notebook Python**;
-3. Carregamento de um DataFrame com os dados de produtos;
-4. Aplicação de filtro para a categoria `"Mountain Bikes"`;
-5. Exibição dos resultados em formato de tabela;
-6. Registro e versionamento no **GitHub**.
+1. Criação do workspace no Azure Databricks;
+2. Abertura de um notebook Python;
+3. Carregamento do dataset products.csv hospedado no GitHub;
+4. Conversão de pandas DataFrame para Spark DataFrame;
+5. Aplicação de filtro para a categoria "Mountain Bikes";
+6. Visualização dos resultados e registro no GitHub.
 
 ---
 
-###  Código Utilizado
+###  Ajuste Técnico Importante
+
+Durante a execução, foi identificado um problema na visualização dos dados em formato gráfico, pois o Databricks Serverless não permite acesso direto ao sistema de arquivos local do cluster.
+
+Para contornar essa limitação e garantir a correta visualização dos dados:
+
+O dataset foi carregado inicialmente como um pandas DataFrame;
+
+Em seguida, foi convertido para um Spark DataFrame, permitindo aproveitar o poder de processamento distribuído do cluster e a visualização nativa do Databricks (otimizada para Spark).
 
 ```Pandas
-# IMPORTANDO ARQUIVO CSV EM PANDAS CONVERTE PARA SPARK PARA VISUALIZAÇÃO DE DADOS DEVIDO NAO ESTA EM SERVELEES "
+# IMPORTANDO ARQUIVO CSV EM PANDAS CONVERTE PARA SPARK "
 import pandas as pd
 
 df_pd = pd.read_csv("https://raw.githubusercontent.com/MicrosoftLearning/mslearn-databricks/main/data/products.csv")
@@ -90,12 +98,12 @@ A consulta retornou os produtos da categoria **Mountain Bikes**, exibindo inform
 
 ---
 
-### 💬 Insights e Aprendizados
+### Insights e Aprendizados
 
-* O **Databricks** permite integrar Python, Spark e análise de dados em um ambiente visual e colaborativo.
-* É possível realizar análises de grande escala de forma simples e rápida.
-* Reforcei o entendimento de **DataFrames distribuídos** e **filtragem de dados com Spark**.
-* A experiência ajudou a consolidar conceitos de **engenharia e análise de dados em nuvem**.
+Aprendi sobre a diferença entre pandas e Spark DataFrames e quando cada um é mais adequado.
+Entendi como o Databricks Serverless gerencia o acesso ao sistema de arquivos e por que a conversão para Spark é necessária.
+Explorei a visualização nativa do Databricks, que é mais eficiente e interativa com Spark.
+Reforcei a importância de versionar notebooks e documentar as decisões técnicas no processo.
 
 ---
 
