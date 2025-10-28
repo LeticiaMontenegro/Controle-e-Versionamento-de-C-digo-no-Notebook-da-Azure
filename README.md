@@ -1,22 +1,17 @@
-Perfeito, Letícia 👏💡
-Então vamos deixar seu README ainda mais completo com **uma seção de evidências** bem organizada — onde você vai inserir as capturas de tela (como as que você me enviou).
 
-Aqui está o modelo atualizado com esse detalhe incluído 👇
 
----
+##  Projeto: Controle e Versionamento de Código no Notebook da Azure
 
-## 🚀 Projeto: Controle e Versionamento de Código no Notebook da Azure
-
-### 📘 Descrição
+###  Descrição
 
 Este projeto faz parte do desafio **"Controle e Versionamento de Código no Notebook da Azure"** da plataforma **DIO (Digital Innovation One)**.
-O objetivo foi explorar o ambiente do **Azure Databricks**, criar um **notebook em Python** e realizar operações de **análise e filtragem de dados com o Apache Spark**.
+O objetivo foi explorar o ambiente do **Azure Databricks**, criar um **notebook em Pandas** e realizar operações de **análise e filtragem de dados com o Apache Spark**.
 
 Durante a prática, foi realizado um filtro para selecionar apenas os produtos da categoria **"Mountain Bikes"** e visualizar as informações principais, como *ProductID*, *ProductName*, *Category* e *ListPrice*.
 
 ---
 
-### 🧠 Objetivo do Projeto
+###  Objetivo do Projeto
 
 * Criar e executar um **notebook Python** dentro do **Azure Databricks**;
 * Praticar comandos básicos de análise com **Apache Spark**;
@@ -25,7 +20,7 @@ Durante a prática, foi realizado um filtro para selecionar apenas os produtos d
 
 ---
 
-### 🛠️ Tecnologias Utilizadas
+###  Tecnologias Utilizadas
 
 * **Microsoft Azure**
 * **Azure Databricks**
@@ -35,7 +30,7 @@ Durante a prática, foi realizado um filtro para selecionar apenas os produtos d
 
 ---
 
-### 🧩 Etapas Realizadas
+###  Etapas Realizadas
 
 1. Criação de um workspace no **Azure Databricks**;
 2. Criação de um **notebook Python**;
@@ -46,14 +41,20 @@ Durante a prática, foi realizado um filtro para selecionar apenas os produtos d
 
 ---
 
-### 💻 Código Utilizado
+###  Código Utilizado
 
-```python
+```Pandas
+# IMPORTANDO ARQUIVO CSV EM PANDAS CONVERTE PARA SPARK PARA VISUALIZAÇÃO DE DADOS DEVIDO NAO ESTA EM SERVELEES "
+import pandas as pd
+
+df_pd = pd.read_csv("https://raw.githubusercontent.com/MicrosoftLearning/mslearn-databricks/main/data/products.csv")
+df_spark = spark.createDataFrame(df_pd)
+display(df_spark)
+
 # Filtrando apenas produtos da categoria "Mountain Bikes"
-df_mountain_bikes = df[df['Category'] == 'Mountain Bikes']
 
-# Exibindo os resultados
-display(df_mountain_bikes)
+df_mountain_bikes_spark = df_spark.filter(df_spark.Category == "Mountain Bikes")
+display(df_mountain_bikes_spark)display(df_mountain_bikes)
 ```
 
 ---
