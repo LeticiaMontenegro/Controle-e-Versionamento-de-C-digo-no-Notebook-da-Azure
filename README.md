@@ -84,17 +84,17 @@ A consulta retornou os produtos da categoria **Mountain Bikes**, exibindo inform
 📌 **1️⃣ Notebook criado e executado no Azure Databricks**
 
 > Mostra o notebook com o DataFrame carregado e a execução do código Python.
-> ![Notebook no Databricks](ANALISE_DADOS_SPARK.png)
+> ![Notebook no Databricks](Notebook_Criado.png)
 
-📌 **2️⃣ Filtragem dos produtos da categoria “Mountain Bikes”**
+📌 **2️⃣ Importando Aquivo Cvs e Converter para Spark”**
+
+> Exibe o resultado  da importação do Csv .
+> ![Importacao csv ](convertendo_Para_spark.png)
+
+📌 **3️⃣ Filtragem dos produtos da categoria “Mountain Bikes”**
 
 > Exibe o resultado do filtro aplicado no DataFrame com os produtos e preços listados.
-> ![Filtro por categoria Mountain Bikes](filtrando_por_categoria.png)
-
-📌 **3️⃣ Resultado final da execução**
-
-> Demonstração do output exibido após o uso do `display(df_mountain_bikes)` mostrando as linhas filtradas.
-> ![Resultado da execução](a563de33-f3d6-404c-a584-06f314f5faf1.png)
+> ![Filtro por categoria Mountain Bikes](filtrando_Categoria_spark.png)
 
 ---
 
